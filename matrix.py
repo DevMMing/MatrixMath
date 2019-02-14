@@ -28,9 +28,16 @@ def ident( matrix ):
 #multiply m1 by m2, modifying m2 to be the product
 #m1 * m2 -> m2
 def matrix_mult( m1, m2 ):
-    pass
+    for i in range(len(m1)-1):
+        for j in range(len(m1[i])):
+            point(i,j,m1,m2)
 
-
+def point(x,y,m1,m2):
+    total=0
+    for j in range(len(m1)):
+        total+=m1[x][j]*m2[j][y]
+    m2[x][y]=total
+            
 
 
 def new_matrix(rows = 4, cols = 4):
