@@ -14,7 +14,7 @@ import math
 def print_matrix( matrix ):
     for i in range(4):
         for j in range(4):
-            print(matrix[j][i],end ='')
+            print(matrix[i][j],end ='')
         print("\n")
 
 #turn the paramter matrix into an identity matrix
@@ -22,8 +22,8 @@ def print_matrix( matrix ):
 def ident( matrix ):
     for i in range(4):
         for j in range(4):
-	    if(i==j):            
-	         matrix[i][j]=1
+            if(i==j or i==3):            
+                matrix[i][j]=1
 
 #multiply m1 by m2, modifying m2 to be the product
 #m1 * m2 -> m2
