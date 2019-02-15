@@ -12,16 +12,16 @@ import math
 #print the matrix such that it looks like
 #the template in the top comment
 def print_matrix( matrix ):
-    for i in range(4):
-        for j in range(4):
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
             print(matrix[i][j],end ='')
         print("\n")
 
 #turn the paramter matrix into an identity matrix
 #you may assume matrix is square
 def ident( matrix ):
-    for i in range(4):
-        for j in range(4):
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
             if(i==j or i==3):            
                 matrix[i][j]=1
 
