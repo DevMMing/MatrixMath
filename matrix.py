@@ -14,7 +14,7 @@ import math
 def print_matrix( matrix ):
     for i in range(len(matrix)):
         for j in range(len(matrix[0])):
-            print(matrix[i][j],end ='')
+            print(matrix[i][j],end =' ')
         print("\n")
 
 #turn the paramter matrix into an identity matrix

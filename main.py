@@ -12,7 +12,7 @@ ident(matrix)
 print_matrix(matrix)
 ident(matrix2)
 matrix_mult(matrix,matrix2)
-m=[[125,26,0],[26,125,0],[0,26,125]]
+m=[[125,26,0,0],[26,125,0,0],[0,26,125,0],[1,1,1,1]]
 matrix_mult(m,matrix2)
 print_matrix(matrix2)
 add_edge(matrix2,50,50,0,100,100,0)
